@@ -5,11 +5,11 @@ the effects of changes to the shader code.
 
 ## Note
 
-Tested with _GLFW_ and _GLAD_. Header file might be modified to fit your project.
+Tested with _GLFW_ and _GLAD_. Header file might have to be modified to fit your project.
 
 ## How to use
 
-Initialize the Shader Program Wrapper with a Vertex Shader and a Fragment Shader:
+1. Initialize the Shader Program Wrapper with a Vertex Shader and a Fragment Shader:
 ```c++
 ShaderProgramWrapper spw("shaders/vertex_shader.shader", 
   "shaders/fragment_shader.shader", 
@@ -18,12 +18,12 @@ ShaderProgramWrapper spw("shaders/vertex_shader.shader",
 
 If the last parameter is set to **false**, the shader files will not be watched.
 
-Use the underlying Shader Program to render:
+2. Use the underlying Shader Program to render:
 ```c++
 spw.UseShaderProgram();
 ```
 
-You can edit the shader files at runtime and 
+3. You can edit the shader files **at runtime** and 
 changes will apply after saving.
 
 ## Impressions
