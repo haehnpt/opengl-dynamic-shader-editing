@@ -3,7 +3,7 @@ This Shader Program Wrapper enables the user to dynamically edit shaders
 at runtime. It can be either used for debugging shaders or while presenting 
 the effects of changes to the shader code.
 
-# How to use
+## How to use
 
 Initialize the Shader Program Wrapper with a Vertex Shader and a Fragment Shader:
 ```c++
@@ -19,4 +19,4 @@ Use the underlying Shader Program to render:
 spw.UseShaderProgram();
 ```
 
-That's all!
+That's all! :)
