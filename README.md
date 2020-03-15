@@ -3,6 +3,10 @@ This Shader Program Wrapper enables the user to dynamically edit shaders
 at runtime. It can be either used for debugging shaders or while presenting 
 the effects of changes to the shader code.
 
+## Note
+
+Tested with _GLAD_. Header file might be modified to fit your project.
+
 ## How to use
 
 Initialize the Shader Program Wrapper with a Vertex Shader and a Fragment Shader:
@@ -21,4 +25,15 @@ spw.UseShaderProgram();
 
 You can edit the shader files at runtime and 
 changes will apply after saving.
+
+## Impressions
+
+Window, console and fragment shader which is ready to be edited:
+![1](screenshots/1.PNG)
+
+Saving *with errors* in the shader does show them in the console:
+![2](screenshots/2.PNG)
+
+Saving *without errors* in the shader yields the expected results:
+![3](screenshots/3.PNG)
 
