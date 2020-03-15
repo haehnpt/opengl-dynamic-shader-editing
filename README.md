@@ -5,7 +5,9 @@ Introduce a Shader Program Wrapper to enable dynamic editing of shaders at runti
 
 Initialize the Shader Program Wrapper with a Vertex Shader and a Fragment Shader:
 ```c++
-ShaderProgramWrapper spw("shaders/vertex_shader.shader", "shaders/fragment_shader.shader", true);
+ShaderProgramWrapper spw("shaders/vertex_shader.shader", 
+  "shaders/fragment_shader.shader", 
+  true);
 ```
 
 If the last parameter is set to _false_, the shader files will not be watched.
