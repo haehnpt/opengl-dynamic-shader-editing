@@ -1,11 +1,11 @@
 # opengl-dynamic-shader-editing
-This Shader Program Wrapper enables the user to dynamically edit shaders
-at runtime. It can be either used for debugging shaders or while presenting 
+This **Shader Program Wrapper** enables the user to dynamically **edit shaders
+at runtime**. It can be either used for debugging shaders or while presenting 
 the effects of changes to the shader code.
 
 ## Note
 
-Tested with _GLAD_. Header file might be modified to fit your project.
+Tested with _GLFW_ and _GLAD_. Header file might be modified to fit your project.
 
 ## How to use
 
@@ -16,7 +16,7 @@ ShaderProgramWrapper spw("shaders/vertex_shader.shader",
   true);
 ```
 
-If the last parameter is set to _false_, the shader files will not be watched.
+If the last parameter is set to **false**, the shader files will not be watched.
 
 Use the underlying Shader Program to render:
 ```c++
@@ -31,9 +31,9 @@ changes will apply after saving.
 Window, console and fragment shader which is ready to be edited:
 ![1](screenshots/1.PNG)
 
-Saving *with errors* in the shader does show them in the console:
+Saving **with errors** in the shader does show them in the console:
 ![2](screenshots/2.PNG)
 
-Saving *without errors* in the shader yields the expected results:
+Saving **without errors** in the shader yields the expected results:
 ![3](screenshots/3.PNG)
 
