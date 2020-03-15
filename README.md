@@ -19,4 +19,6 @@ Use the underlying Shader Program to render:
 spw.UseShaderProgram();
 ```
 
-That's all! :)
+You can edit the shader files at runtime and 
+changes will apply after saving.
+
